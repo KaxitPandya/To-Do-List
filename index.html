@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To - Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact Us</li>
+                <li>FeedBack</li>
+                <li>About</li>
+                <li class="logo">To - Do List</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container ">
+                        
+                <div class="form-group1">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="">
+                </div>
+    
+                <div class="form-group2">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" rows="3" placeholder=""></textarea>
+                </div>
+                
+    
+                <button  id="add" class="btn btn-primary">Add to list</button>
+                <button  id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
+             
+    
+            <div id="items" >
+                <h2>Your Items</h2>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Sr No.</th>
+                        <th scope="col">Item Title</th>
+                        <th scope="col">Item Description</th> 
+                        <th scope="col">Actions</th> 
+                      </tr>
+                    </thead>
+
+                    <tbody id="tableBody">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Get some Coffee</td>
+                        <td>You need coffee as you are a coder</td> 
+                        <td><button class="btn btn-sm btn-primary">Delete</button></td> 
+                      </tr>
+                    </tbody>
+
+                  </table>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        Copyright &copy; KaxitPandya
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
