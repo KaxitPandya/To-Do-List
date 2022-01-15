@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(rgb(58, 189, 58) , rgb(62, 62, 214));
+    /* background-color: black; */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+nav{
+    background-color: rgba(103, 230, 103, 0);
+    height: 8vh;
+    width: 100%;
+    color: white;
+    
+}
+
+ul{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+}
+
+li{
+    display: inline;
+    padding: 0 0.5vw;
+    font-size: 3vh;
+    flex-wrap: wrap;
+
+}
+li:hover{
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 5vh;
+    text-align: center;
+    height: 8vh;
+    margin-left: 21vw;
+    padding-top: 12px;
+}
+
+
+.container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group1{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group2{
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#title{
+    width: 25vw;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: black;
+    padding: 2px;
+    background-color: rgba(58, 189, 58, 0);
+    font-size: 1rem;
+    font-weight: 600;
+}
+#description{
+    width: 25vw;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 2px;
+    background-color: rgba(58, 189, 58, 0);
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+#title:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+#description:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+label{    
+    font-size: 3vh;
+    padding: 1vh 0;
+}
+
+#add{
+    height: 3vh;
+    padding: 2px;
+    border: 2px solid white ;
+    border-radius: 5px;
+    background-color:rgba(62, 62, 214, 0) ;
+    color: white;
+}
+
+#clear{
+    margin-top: 2vh;
+    height: 3vh;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color:rgba(62, 62, 214, 0) ;
+    color: white;
+}
+#add:hover{
+    color: black;
+    background-color:white ;
+    cursor: pointer;
+}
+
+#clear:hover{
+    color: black;
+    background-color:white ;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    color: black;
+    background-color:white ;
+    cursor: pointer;
+}
+
+#items{
+    margin-top: 4vh;
+    min-height: 30.2vh;
+    color: white;
+}
+
+.table{
+    margin-top: 3vh;
+    padding: 3px;
+    min-height: 30.2vh;
+}
+
+td{
+    padding: 1vw;
+}
+th{
+    padding: 1vw;
+}
+.btn-sm{
+    border: 2px solid white ;
+    border-radius: 5px;
+    padding: 2px;
+    background-color:rgba(62, 62, 214, 0) ;
+    color: white;
+}
+
+footer{
+    display: flex;
+    background-color: rgba(62, 62, 214, 0);
+    color: white;
+    height: 4vh;
+    padding: 2vh 0;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+@media screen and (max-width : 380px) {
+    .nav{
+        min-height: 30vh;
+        flex-wrap: wrap;
+    }
+    .ul{
+        min-height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .li{
+        display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.1vw;
+        
+    }
+    .logo{
+        /* margin-top: 15vh; */
+        /* height: 25vh; */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 8vh;
+        left: 30vw;
+        font-size: 1.2rem;
+        /* margin-left: 1vw; */
+    }
+    #title{
+        width: 25vw;
+        
+    }
+    #description{
+        width: 25vw;
+        
+    }
+}
